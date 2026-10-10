@@ -19,9 +19,9 @@ The data visualization script retrieves data from the MySQL database and display
 
 ## Setup and Installation
 1. Connect the distance and weight sensors to the ESP32 microcontroller as per the specified wiring.
-2. Upload the provided ESP32 code to the microcontroller using the Arduino IDE.
+2. In the ESP32 code, fill in your WiFi details, set `host` to your server's `post-esp-data.php` URL, and set `apiKeyValue` to your own secret key. Then upload it to the microcontroller using the Arduino IDE.
 3. Set up a MySQL database on your server and update the data receiver script's database credentials accordingly.
-4. Replace the `$api_key_value` variable in the data receiver script with your desired API key for secure data transmission.
+4. Set the `$api_key_value` variable in the data receiver script to the same secret key you used in the ESP32 code. Never commit real keys or passwords to a public repo.
 5. Include the Highcharts library in your HTML file to use the data visualization script.
 6. Configure your HTML file to send HTTP GET requests to the data visualization script's URL.
 
