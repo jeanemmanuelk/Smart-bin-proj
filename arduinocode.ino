@@ -16,11 +16,11 @@ float weight;
 
 const char* ssid = ""; // Your local WiFi SSID
 const char* password = ""; // WiFi password
-const char* host = "http://kjesens.xyz/jkouad96/post-esp-data.php"; // Hostname
+const char* host = "http://YOUR_SERVER/post-esp-data.php"; // Hostname
 
-// Keep this API Key value to be compatible with the PHP code provided in the project page.
+// Set your own secret value here. It must match $api_key_value in post-esp-data.php.
 // If you change the apiKeyValue value, the PHP file /post-esp-data.php also needs to have the same key
-String apiKeyValue = "tPmAT5Ab3j7F9";
+String apiKeyValue = "YOUR_API_KEY";
 
 void setup()
 {
