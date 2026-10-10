@@ -20,9 +20,9 @@ $dbuser = '';       // Your server username
 $dbpass = '';       // Your database password
 $dbhost = 'localhost';  // Your database hosting server name ("localhost" for local development)
 
-// Keep this API Key value to be compatible with the ESP32 code provided in the project page.
+// Set your own secret value here. It must match apiKeyValue in the ESP32 sketch.
 // If you change this value, the ESP32 sketch needs to match
-$api_key_value = "tPmAT5Ab3j7F9";
+$api_key_value = "YOUR_API_KEY";
 
 // Initialize variables
 $api_key = $distance = $weight = $binState = "";
